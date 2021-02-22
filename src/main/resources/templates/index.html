@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<h1>그래그래</h1>
+<table>
+  <tr th:each="member : ${members}">
+    <td th:text="${member.getId()}"></td>
+    <td th:if="${member.getEmail()} == 1" th:text="일이다"></td>
+    <td th:unless="${member.getEmail()} == 1" th:text="일이다"></td>
+  </tr>
+</table>
+</body>
+</html>
