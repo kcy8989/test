@@ -15,4 +15,5 @@ public class Member {
   private String address;
   private String phone;
   private String mobile;
+  private String among;
 }
